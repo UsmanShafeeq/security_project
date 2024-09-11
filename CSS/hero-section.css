@@ -1,0 +1,42 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+
+.hero-section .info {
+    max-width: 400px;
+    margin-left: 100px;
+   
+    
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-section h3 {
+    font-size: 1.5rem;
+    color: #ffc107;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.hero-section .btn-appointment {
+    background-color: #ffc107;
+    color: #000;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-section .btn-appointment:hover {
+    background-color: #e0a800;
+    color: #fff;
+}

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Navbar Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/hero-section.css">
+    <link rel="stylesheet" href="CSS/about-us.css">
+    <link rel="stylesheet" href="CSS/services.css">
+    <link rel="stylesheet" href="CSS/info-section">
+    <link rel="stylesheet" href="CSS/customer-section.css">
+    <link rel="stylesheet" href="CSS/blog-section.CSS">
+    <link rel="style" href="CSS/GuardsSection.CSS">
+    <link rel="style" href="CSS/latest-blog.CSS">
+    <style>
+        .hero-section {
+            background-image: url('image/hero-image.jfif');
+            background-size: cover;
+            background-position: center;
+            padding: 60px 0;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <!-------header------->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <span class="brand-part yellow">Saf</span>
+                    <span class="brand-part black">Zone</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-us">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex search-bar ms-lg-3">
+                        <div class="input-group">
+                            <input class="form-control rounded-start" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <span class="input-group-text text-white rounded-end"><i class="fas fa-search"></i></span>
+                        </div>
+                    </form>
+                    <a href="#" class="btn login-btn ms-lg-3">Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!------hero-section-->
+    <div id="home" class="hero-section">
+        <div class="info">
+            <h3>We Provide the Best</h3>
+            <h1>Security Service</h1>
+            <p><i>Ensuring your safety with top-notch protection. Our comprehensive security solutions are designed to
+                    safeguard your assets and provide peace of mind. Experience unmatched reliability and expertise in
+                    security management.</i></p>
+            <a href="#" class="btn btn-appointment">Get Appointment</a>
+        </div>
+    </div>
+
+
+    <!--------- Experience Section -------->
+    <div id="about-us" class="container-fluid">
+        <div class="experience-section row align-items-center">
+            <!-- Text Section -->
+            <div class="col-md-6 message">
+                <h3 style="font-size: 2.5rem; font-weight: bold; color: #333; letter-spacing: 1px;">We Have 21 Years of
+                    Experience</h3>
+                <p style="color: #666; font-size: 1.1rem; line-height: 1.8;">
+                    With over two decades of experience in the industry, we pride ourselves on delivering exceptional
+                    solutions
+                    tailored to your needs. Our team's deep expertise and unwavering commitment ensure that every
+                    project is
+                    handled with the utmost reliability and precision. Trust us to provide top-notch services that
+                    exceed your
+                    expectations and deliver real value.
+                </p>
+                <a href="#" class="btn-contact-us">Contact Us</a>
+            </div>
+
+            <!-- Image Section -->
+            <div class="col-md-6 image text-center">
+                <img src="image/experience.png" alt="Experience Image" class="img-fluid experience-img" loading="lazy"
+                    style="max-width: 90%; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------services---------------->
+    <div id="services" class="container-fluid" style="background-color: #f5f3f3; padding-top: 40px;">
+        <div class="text-center mb-4">
+            <h1 class="display-4">Our Services</h1>
+            <p class="lead">Explore our comprehensive range of high-quality security services tailored to your needs.
+            </p>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="image/private-security.jpg" class="card-img-top img-fluid" alt="Private Security">
+                    <div class="card-body">
+                        <h4 class="card-title">Private Security</h4>
+                        <p class="card-text">Expert security solutions designed to protect your property and assets with
+                            personalized service.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="image/cover-security-guard.jpg" class="card-img-top img-fluid" alt="Transport Security">
+                    <div class="card-body">
+                        <h4 class="card-title">Transport Security</h4>
+                        <p class="card-text">Ensuring the safety of goods and personnel during transportation with
+                            advanced security measures.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="image/home-security.jpeg" class="card-img-top img-fluid" alt="Home Security">
+                    <div class="card-body">
+                        <h4 class="card-title">Home Security</h4>
+                        <p class="card-text">Providing comprehensive home security solutions to ensure the safety of
+                            your loved ones and belongings.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------- Info Section -------------------->
+    <div class="info-section container " style="padding-top: 40px;">
+        <div class="row align-items-center">
+            <!-- Left Section: Why Choose Us -->
+            <div class="col-lg-8">
+                <h1 class="mb-4  fw-bold">Why Choose Us</h1>
+                <ul class="list-unstyled">
+                    <li class="mb-5">
+                        <h4 class="d-flex align-items-center">
+                            <i class="fas fa-check-circle text-success me-3 icon-style"></i>
+                            <span class="fw-bold">Free Estimate</span>
+                        </h4>
+                        <p class="text-muted ps-5">
+                            Receive a quick, no-obligation quote at zero cost. We provide transparent pricing with no
+                            hidden fees, ensuring clarity from start to finish. Our expert team is always ready to
+                            assist with any questions.
+                        </p>
+                    </li>
+                    <li class="mb-5">
+                        <h4 class="d-flex align-items-center">
+                            <i class="fas fa-clock text-warning me-3 icon-style"></i>
+                            <span class="fw-bold">24/7 Services</span>
+                        </h4>
+                        <p class="text-muted ps-5">
+                            We are available round-the-clock to serve you. Whether it's day or night, our dedicated team
+                            is always on standby to address your needs efficiently and professionally.
+                        </p>
+                    </li>
+                    <li class="mb-5">
+                        <h4 class="d-flex align-items-center">
+                            <i class="fas fa-dollar-sign text-info me-3 icon-style"></i>
+                            <span class="fw-bold">Flat Rate Fee</span>
+                        </h4>
+                        <p class="text-muted ps-5">
+                            Enjoy straightforward pricing with no surprises. Our upfront estimates provide clear costs,
+                            ensuring you never face unexpected fees.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right Section: Request a Quote Form -->
+            <div class="col-lg-4">
+                <div class="form bg-white p-5 rounded shadow-lg hover-effect">
+                    <h3 class="mb-4 ">Request a Quote</h3>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-input " placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-input " placeholder="Subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control form-input " rows="4" placeholder="Your Message"
+                                required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-primary w-100 py-2">Submit Inquiry</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Client Image and Info Section -->
+    <div class="client-section position-relative">
+        <div class="row align-items-center">
+            <!-- Image Section with Text and Form Overlay -->
+            <div class="col-lg-12 position-relative mb-4">
+                <img src="image/Boardroom.jpg" class="img-fluid rounded w-100" alt="Boardroom">
+
+                <!-- Overlay Content -->
+                <div
+                    class="overlay-content position-absolute top-50 start-50 translate-middle text-center text-white p-4 rounded shadow-lg">
+                    <div class="row">
+                        <!-- Text Section -->
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <h5 class="heading1 mb-2">Join Our Volunteer Team</h5>
+                            <h5 class="heading2 mb-4">Stay Updated with Our Newsletter</h5>
+                        </div>
+
+                        <!-- Form Section -->
+                        <div class="col-md-6">
+                            <form
+                                class="d-flex flex-column flex-md-row align-items-center p-3 rounded bg-light bg-opacity-75">
+                                <input type="email" class="form-control me-md-3 mb-3 mb-md-0"
+                                    placeholder="Your email address" aria-label="Email">
+                                <button type="submit" class="btn btn-primary btn-subscribe">Subscribe Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Customer Reviews Section -->
+    <div class="container text-center">
+        <h2 class="display-4 mb-4">What Our Clients Say</h2>
+        <p class="lead text-muted mx-auto" style="max-width: 800px;">
+            Discover the impact of our services through the words of those who matter most—our clients.
+            Their feedback highlights the quality and dedication that define our work.
+        </p>
+    </div>
+
+    <div class="container ">
+        <div class="row justify-content-center">
+            <!-- Client Testimonial 1 -->
+            <div class="col-md-5 d-flex flex-column mb-4 mx-2 p-4 border rounded shadow-lg bg-light testimonial-card">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="image/man.PNG" alt="Client Testimonial" width="90" height="90"
+                        class="rounded-circle me-3 border border-primary img-fluid testimonial-img">
+                    <div>
+                        <h5 class="fw-bold mb-1">John Doe</h5>
+                        <p class="text-muted mb-2">
+                            "Safezone provides exceptional security solutions. Their team is not only professional but
+                            also incredibly reliable. Every service is carried out efficiently and thoroughly."
+                        </p>
+                    </div>
+                </div>
+                <div class="text-muted border-top pt-3">
+                    <p class="mb-0">⭐⭐⭐⭐⭐</p>
+                </div>
+            </div>
+
+            <!-- Client Testimonial 2 -->
+            <div class="col-md-5 d-flex flex-column mb-4 mx-2 p-4 border rounded shadow-lg bg-light testimonial-card">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="image/man.PNG" alt="Client Testimonial" width="90" height="90"
+                        class="rounded-circle me-3 border border-primary img-fluid testimonial-img">
+                    <div>
+                        <h5 class="fw-bold mb-1">Jane Smith</h5>
+                        <p class="text-muted mb-2">
+                            "We trust Safezone with our security needs because they go above and beyond. Their
+                            commitment to delivering high-quality services has made them our go-to partner."
+                        </p>
+                    </div>
+                </div>
+                <div class="text-muted border-top pt-3">
+                    <p class="mb-0">⭐⭐⭐⭐⭐</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------- Our Guards Section -------------------------->
+    <div style="width: 100%; background-color: rgba(173, 173, 177, 0.15); padding: 50px 0;">
+        <div class="container text-center">
+            <h2 class="display-4 text-uppercase mb-4 animate__animated animate__bounceInDown"
+                style="letter-spacing: 3px; color: #333;">
+                <strong>Meet Our Professional Guards</strong>
+            </h2>
+            <p class="lead text-muted animate__animated animate__fadeInUp" style="max-width: 700px; margin: 0 auto;">
+                Safezone’s highly trained and dedicated team of guards provides top-notch security services, offering
+                you peace of mind with their commitment to excellence.
+            </p>
+        </div>
+
+        <!-- Team Members Section -->
+        <div class="d-flex justify-content-center flex-wrap mt-5">
+
+            <!-- Profile 1 -->
+            <div class="img-profile text-center mx-4 mb-5 animate__animated animate__zoomIn" style="width: 240px;">
+                <div class="profile-pic position-relative"
+                    style="border-radius: 15px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.2); transition: transform 0.3s ease-in-out;">
+                    <img src="image/home-security.jpeg" alt="Usman Shafeeq"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                        style="background-color: rgba(0, 0, 0, 0.7); opacity: 0; transition: opacity 0.5s ease;">
+                        <a href="#" class="text-white mx-2" style="font-size: 1.8rem; transform: scale(1);"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white mx-2" style="font-size: 1.8rem; transform: scale(1);"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white mx-2" style="font-size: 1.8rem; transform: scale(1);"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <h6 class="fw-bold mt-3" style="color: #333;">Usman Shafeeq</h6>
+                <p class="text-muted">Director</p>
+                <hr class="mx-auto" style="width: 60px; border-color: #ffcc00;">
+            </div>
+
+            <!-- Profile 2 -->
+            <div class="img-profile text-center mx-4 mb-5 animate__animated animate__zoomIn animate__delay-1s"
+                style="width: 240px;">
+                <div class="profile-pic position-relative"
+                    style="border-radius: 15px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.2); transition: transform 0.3s ease-in-out;">
+                    <img src="image/home-security.jpeg" alt="Team Member"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                        style="background-color: rgba(0, 0, 0, 0.7); opacity: 0; transition: opacity 0.5s ease;">
+                        <a href="#" class="text-white mx-2" style="font-size: 1.8rem; transform: scale(1);"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white mx-2" style="font-size: 1.8rem; transform: scale(1);"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white mx-2" style="font-size: 1.8rem; transform: scale(1);"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <h6 class="fw-bold mt-3" style="color: #333;">Team Member</h6>
+                <p class="text-muted">Security Expert</p>
+                <hr class="mx-auto" style="width: 60px; border-color: #ffcc00;">
+            </div>
+
+            <!-- Profile 3 -->
+            <div class="img-profile text-center mx-4 mb-5 animate__animated animate__zoomIn animate__delay-2s"
+                style="width: 240px;">
+                <div class="profile-pic position-relative"
+                    style="border-radius: 15px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.2); transition: transform 0.3s ease-in-out;">
+                    <img src="image/home-security.jpeg" alt="Team Member"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                        style="background-color: rgba(0, 0, 0, 0.7); opacity: 0; transition: opacity 0.5s ease;">
+                        <a href="#" class="text-white mx-2" style="font-size: 1.8rem; transform: scale(1);"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white mx-2" style="font-size: 1.8rem; transform: scale(1);"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white mx-2" style="font-size: 1.8rem; transform: scale(1);"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <h6 class="fw-bold mt-3" style="color: #333;">Team Member</h6>
+                <p class="text-muted">Security Expert</p>
+                <hr class="mx-auto" style="width: 60px; border-color: #ffcc00;">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-------------- Latest Blog Section --------------->
+    <div class="latest-blog" style="width: 100%;  padding: 60px 0;">
+        <div class="container text-center">
+            <h3 class="text-uppercase font-weight-bold animate__animated animate__fadeInDown"
+                style="letter-spacing: 3px; color: #333;">
+                <b>Latest Blog</b>
+            </h3>
+            <p class="lead text-muted animate__animated animate__fadeInUp"
+                style="width: 60%; margin: auto; text-align: justify;">
+                Stay updated with the latest trends, insights, and tips from our security experts. Our blog covers a
+                wide range of topics, from advanced protection techniques to industry news. Discover how you can enhance
+                your safety with our expert advice.
+            </p>
+            <div class="divider my-4 animate__animated animate__fadeIn"
+                style="width: 80px; height: 4px; background-color: #ffcc00; margin: 30px auto;"></div>
+        </div>
+
+        <div class="img-section d-flex justify-content-center align-items-stretch flex-wrap animate__animated animate__fadeInUp"
+            style="margin: 0 10%;">
+            <!-- Blog Post 1 -->
+            <div class="blog-card text-center mx-4 mb-5 animate__animated animate__zoomIn" style="width: 300px;">
+                <div class="blog-image"
+                    style="overflow: hidden; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.1);">
+                    <img src="image/image9.jpg" alt="Blog Image 1" class="blog-img"
+                        style="width: 100%; height: 200px; object-fit: cover; transition: transform 0.4s;">
+                </div>
+                <div class="blog-content p-3"
+                    style="background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <h4 style="color: #333;">Dolor Sit</h4>
+                    <small style="color: #999;">Date: 01 Jan 2024, by: Admin</small>
+                    <p style="text-align: justify; color: #666;">Explore the latest trends in digital security, from
+                        encryption techniques to safety protocols.</p>
+                    <button class="btn btn-warning"
+                        style="background-color: #ffcc00; color: #fff; border: none; padding: 10px 20px; border-radius: 5px;">Read
+                        more</button>
+                </div>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="blog-card text-center mx-4 mb-5 animate__animated animate__zoomIn animate__delay-1s"
+                style="width: 300px;">
+                <div class="blog-image"
+                    style="overflow: hidden; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.1);">
+                    <img src="image/image15.jpg" alt="Blog Image 2" class="blog-img"
+                        style="width: 100%; height: 200px; object-fit: cover; transition: transform 0.4s;">
+                </div>
+                <div class="blog-content p-3"
+                    style="background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <h4 style="color: #333;">Most Security Site Amet</h4>
+                    <small style="color: #999;">Date: 05 Jan 2024, by: Admin</small>
+                    <p style="text-align: justify; color: #666;">Discover the best practices for securing your online
+                        presence, from firewalls to multi-factor authentication.</p>
+                    <button class="btn btn-warning"
+                        style="background-color: #ffcc00; color: #fff; border: none; padding: 10px 20px; border-radius: 5px;">Read
+                        more</button>
+                </div>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="blog-card text-center mx-4 mb-5 animate__animated animate__zoomIn animate__delay-2s"
+                style="width: 300px;">
+                <div class="blog-image"
+                    style="overflow: hidden; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.1);">
+                    <img src="image/image1.jpg" alt="Blog Image 3" class="blog-img"
+                        style="width: 100%; height: 200px; object-fit: cover; transition: transform 0.4s;">
+                </div>
+                <div class="blog-content p-3"
+                    style="background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <h4 style="color: #333;">WebcamGuard Site Amit</h4>
+                    <small style="color: #999;">Date: 10 Jan 2024, by: Admin</small>
+                    <p style="text-align: justify; color: #666;">Find out how to keep your webcam secure from malicious
+                        attacks. Learn the importance of regular updates and proper device configuration.</p>
+                    <button class="btn btn-warning"
+                        style="background-color: #ffcc00; color: #fff; border: none; padding: 10px 20px; border-radius: 5px;">Read
+                        more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" style="background-color: #f5f5f5; border-top: 4px solid #ffcc00;">
+        <div class="container d-flex justify-content-between align-items-start"
+            style="flex-wrap: wrap; padding: 40px 20px;">
+            <!-- About Us Section -->
+            <div class="aboutus" style="flex: 1; min-width: 300px; margin-right: 20px;">
+                <h2 style="color: #333;">About Us</h2>
+                <p style="color: #555; font-size: 1.1rem; line-height: 1.6;">We are a leading company committed to
+                    providing
+                    innovative solutions to our customers. Our focus is on delivering exceptional products and services
+                    that
+                    improve lives and drive success.</p>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="quick" style="flex: 1; min-width: 200px; margin-right: 20px;">
+                <h4 style="color: #333; margin-bottom: 20px;">Quick Links</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="#" style="color: #555; text-decoration: none;">Our Services</a></li>
+                    <li><a href="#" style="color: #555; text-decoration: none;">Our Company</a></li>
+                    <li><a href="#" style="color: #555; text-decoration: none;">Our Vision & Mission</a></li>
+                    <li><a href="#" style="color: #555; text-decoration: none;">Our Products</a></li>
+                    <li><a href="#" style="color: #555; text-decoration: none;">Our Subjects</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Section -->
+            <div class="newsletter" style="flex: 1; min-width: 300px;">
+                <h4 style="color: #333;">Newsletter</h4>
+                <p style="color: #555; font-size: 1.1rem;">Stay updated with our latest news and updates by subscribing
+                    to
+                    our newsletter.</p>
+                <input type="text" placeholder="Enter your email"
+                    style="padding: 10px; width: 100%; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 10px;">
+                <button class="btn btn-warning"
+                    style="background-color: #ffcc00; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; width: 100%;">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
