@@ -14,8 +14,9 @@
 .testimonial-card:hover .testimonial-img {
     transform: rotate(5deg);
 }
-.img-fluid {
+.img-fluid1 {
     max-height: 300px;
-    width: 10%;
+    width: 40%;
+    height: 40%;
     object-fit: cover;
 }
