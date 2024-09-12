@@ -1,0 +1,40 @@
+.experience {
+    padding: 60px 0;
+
+}
+
+.experience-heading {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.experience-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+    text-align: justify;
+}
+
+.img-experience {
+    max-width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-custom {
+    background-color: #ffc107;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #e0a800;
+
+}
