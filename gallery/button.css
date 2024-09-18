@@ -1,0 +1,20 @@
+/* Button Section Styles */
+button.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.btn{
+    background-color: #202020;
+    color: white;
+    
+}
+
+
+button.btn:hover {
+    background-color: #f0cf1577;
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}

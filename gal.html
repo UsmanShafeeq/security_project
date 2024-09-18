@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Service</title>
+    <title>Gallery</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,20 +12,18 @@
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <!-- Local CSS Files -->
-    <link rel="stylesheet" href="service/service-global.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="components/header.css">
     <link rel="stylesheet" href="components/footer.css">
-    <link rel="stylesheet" href="service/service-hero.css">
-    <link rel="stylesheet" href="service/service-sidebar.css">
-    <link rel="stylesheet" href="service/service-message.css">
-
+    <link rel="stylesheet" href="gallery/hero.css">
+    <link rel="stylesheet" href="gallery/gallery.css">
+    <link rel="stylesheet" href="gallery/button.css">
 </head>
 
 <body>
-    <!-- About Us Header Section -->
-    <header class="about-us-header">
 
+    <!-- Header Section -->
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="#">
@@ -40,7 +37,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            <a class="nav-link active" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about-us">About Us</a>
@@ -57,7 +54,7 @@
                             <div class="input-group">
                                 <input class="form-control rounded-start" type="search" placeholder="Search"
                                     aria-label="Search">
-                                <span class="input-group-text text-white  rounded-end">
+                                <span class="input-group-text text-white rounded-end">
                                     <i class="fas fa-search"></i>
                                 </span>
                             </div>
@@ -67,57 +64,87 @@
                 </div>
             </div>
         </nav>
-
     </header>
 
+    <!-- Hero Section -->
     <!-- Hero Section -->
     <section class="hero-section text-center py-5"
         style="background: url('service/service-images/hero-image.jfif') no-repeat center center; background-size: cover;">
         <div class="container">
-            <h3 class="display-4 text-white font-weight-bold mb-3 animate__animated animate__fadeIn">Our Services</h3>
-            <p class="lead text-light mb-0 animate__animated animate__fadeIn animate__delay-1s">Home / Services</p>
+            <h3 class="display-4 text-white font-weight-bold mb-3 animate__animated animate__fadeIn">Our Gallery</h3>
+            <p class="lead text-light mb-0 animate__animated animate__fadeIn animate__delay-1s">Home / Gallery</p>
         </div>
     </section>
 
-    <section class="sidebar-image-section">
-        <div class="container margin-10">
-            <div class="row">
-                <div class="col-md-3">
-                    <!-- Sidebar Content -->
-                    <div class="sidebar py-5">
-                        <a href="#">Private Security</a>
-                        <a href="#">Transport Security</a>
-                        <a href="#">Home Security</a>
-                        <a href="#">Self Security</a>
-                        <a href="#">Office Security</a>
-                    </div>
-                </div>
-                <div class="col-md-8 ps-5">
-                    <!-- Main Column Content -->
-                    <div class="p-4 bg-light">
-                        <img src="service/service-images/image4.jpg" alt="Service Image" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Button Section -->
+    <section class="text-center my-4" style="padding-top: 100px;">
+        <button class="btn  mx-2">View All</button>
+        <button class="btn  mx-2">Recent</button>
+        <button class="btn  mx-2">Popular</button>
+        <button class="btn  mx-2">Popular</button>
+
     </section>
 
-    <!-- Message Section -->
-    <section class="message-section text-center " style="padding-left: 50px;">
+    <!-- Gallery Section -->
+    <section class="gallery-section py-5">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-10 col-lg-8">
-                    <h3 class="display-4 font-weight-bold mb-4">Home Security</h3>
-                    <p class="lead mb-4">Ensuring the safety and protection of your home is our top priority. Our
-                        advanced security systems offer 24/7 monitoring and real-time alerts to keep you informed and
-                        secure. Trust us to safeguard your loved ones and property with cutting-edge technology and
-                        professional service. Experience peace of mind with our reliable and comprehensive home security
-                        solutions.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="gallery/image-folder/cover-security-guard.jpg" class="card-img-top"
+                            alt="Gallery Image 1">
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="gallery/image-folder/image6.jpg" class="card-img-top" alt="Gallery Image 2">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="gallery/image-folder/image8.jpg" class="card-img-top" alt="Gallery Image 3">
+                    </div>
 
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="gallery/image-folder/cover-security-guard.jpg" class="card-img-top"
+                                alt="Gallery Image 1">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="gallery/image-folder/image6.jpg" class="card-img-top" alt="Gallery Image 2">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="gallery/image-folder/image8.jpg" class="card-img-top" alt="Gallery Image 3">
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <img src="gallery/image-folder/cover-security-guard.jpg" class="card-img-top"
+                                    alt="Gallery Image 1">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <img src="gallery/image-folder/image6.jpg" class="card-img-top" alt="Gallery Image 2">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <img src="gallery/image-folder/image8.jpg" class="card-img-top" alt="Gallery Image 3">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+    </section>
 
     <!-- Footer Section -->
     <footer class="footer bg-light py-5 border-top border-warning">
@@ -163,15 +190,18 @@
         </div>
     </footer>
 
-    <!-- Local JS Files -->
-    <script src="service/service-global.js"></script>
-    <script src="components/header.js"></script>
-    <script src="components/footer.js"></script>
-    <script src="service/service-hero.js"></script>
-    <script src="service/service-sidebar.js"></script>
-    <script src="service/service-message.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+
+    <!-- External JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/header.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/footer.js"></script>
 </body>
 
 </html>
