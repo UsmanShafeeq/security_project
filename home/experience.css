@@ -1,62 +1,42 @@
- .experience-section {
-        padding: 40px 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+/* General Styling for Experience Section */
+.container-fluid {
+    background-color: #f5f3f3;
+}
 
-    .message h1 {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-        color: #333;
-    }
+/* Experience Title */
+.experience-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 1px;
+}
 
-    .message p {
-        font-size: 1.1rem;
-        color: #666;
-        line-height: 1.8;
-    }
+/* Experience Description */
+.experience-description {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
 
-    .btn-contact-us {
-        display: inline-block;
-        padding: 12px 30px;
-        margin-top: 20px;
-        background-color: #ffcc00;
-        color: #333;
-        font-size: 1rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        border-radius: 30px;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-        text-decoration: none;
-    }
+/* Contact Us Button */
+.btn-contact-us {
+   
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
 
-    .btn-contact-us:hover {
-        background-color: #e6b800;
-        transform: translateY(-5px);
-    }
+.btn-contact-us:hover {
+    background-color: #ffc107;/* Darker shade on hover */
+}
 
-    .experience-img {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .experience-img:hover {
-        transform: scale(1.05);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-    }
-
-    /* Responsive Adjustments */
-    @media (max-width: 768px) {
-        .experience-section {
-            flex-direction: column-reverse;
-            text-align: center;
-        }
-
-        .message {
-            margin-top: 30px;
-        }
-
-        .message h1 {
-            font-size: 2rem;
-        }
-    }
+/* Image Styling */
+.img-fluid {
+    max-height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}

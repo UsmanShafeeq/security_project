@@ -1,0 +1,89 @@
+/* General Info Section Styling */
+
+
+.info-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #343a40;
+    /* Dark color for better readability */
+}
+
+.icon-style {
+    font-size: 2rem;
+    /* Larger icon size for better visibility */
+    transition: color 0.3s ease;
+    /* Smooth color transition */
+}
+
+.icon-style:hover {
+    color: #ffc107;
+    /* Change color on hover */
+}
+
+ul.list-unstyled {
+    padding-left: 0;
+}
+
+ul.list-unstyled li {
+    border-bottom: 1px solid #dee2e6;
+    /* Subtle border between items */
+    padding-bottom: 20px;
+}
+
+ul.list-unstyled li:last-child {
+    border-bottom: none;
+}
+
+h4 {
+    font-size: 1.25rem;
+    color: #495057;
+    /* Darker text color for headings */
+}
+
+.text-muted {
+    color: #6c757d;
+    /* Muted color for descriptive text */
+}
+
+.form-container {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* More pronounced shadow on hover */
+}
+
+.form-input {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #ffc107;
+    /* Highlight border on focus */
+    outline: none;
+}
+
+.btn-primary {
+    background-color: #ffc107;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ffc107;
+    /* Darker blue on hover */
+    transform: translateY(-2px);
+    /* Subtle lift effect */
+}
+.img-fluid12{
+    height: 30%;
+}

@@ -1,65 +1,110 @@
-.text-center {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
+/* General Styling for Services Section */
+.container-fluid {
+    background-color: #f9f9f9;
+    padding-top: 60px; /* Increased padding for better spacing */
+    padding-bottom: 60px;
 }
 
-.text-center h1.display-4 {
-    font-size: 2rem; 
+/* Section Header */
+.text-center h1 {
+    font-size: 3.5rem; /* Larger heading for greater impact */
     font-weight: 700;
-    color: #343a40; 
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-out;
 }
 
-.text-center p.lead {
-    font-size: 1.125rem;
-    color: #6c757d; 
+.text-center p {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-out 0.5s; /* Delay for text fade-in */
 }
 
+/* Card Styling */
 .card {
     border: none;
-    border-radius: 0.75rem; 
-    overflow: hidden; 
+    border-radius: 12px; /* More rounded corners */
+    overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card-img-top {
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+    height: 200px;
+    transition: opacity 0.6s ease; /* Smooth fade-in and out effect */
+}
+
+.card-body {
+    padding: 2rem;
+    background: #fff;
+    transition: background 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    opacity: 0.8; /* Slight fade effect on hover */
+}
+
 .card:hover {
-    transform: translateY(-8px); 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2); /* Enhanced shadow on hover */
 }
 
 .card-title {
-    font-size: 1.5rem; 
-    font-weight: 600;
-    color: #212529; 
+    font-size: 1.75rem; /* Slightly larger title */
+    color: #333;
+    margin-bottom: 15px;
 }
 
 .card-text {
-    color: #495057; 
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
 }
 
 .btn-primary {
-    background-color: #ffc107;
+    background-color: hsl(44, 100%, 50%);
     border: none;
-    color: #000;
-    border-radius: 50px;
-    padding: 10px 30px;
-    font-size: 1rem; 
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1.125rem;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: #e0a800; 
-    color: #000; 
-    transform: scale(1.05);
+    background-color: hsl(44, 100%, 45%);
+    transform: translateY(-2px);
 }
 
-.img-fluid {
-    max-height: 300px; 
-    width: 100%; 
-    object-fit: cover;
+/* Animation for fading in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.card-img-top {
-    height: 45%; 
+/* Animation for fading out */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+/* Initial state for fade-in elements */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+/* State for visible elements */
+.fade-in-visible {
+    opacity: 1;
 }

@@ -1,49 +1,36 @@
-/* Ensure all images have the same width and height */
-.img-dolar-sit img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-}
-
-/* Adjust the margins of img-section */
-.img-section {
-    margin-left: 20%;
-    margin-right: 20%;
-}
-.latest-blog h3 {
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.img-dolar-sit button:hover {
-    background-color: #e6b800;
-}
 .blog-card {
-    background: white;
-    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .blog-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.blog-img {
-    width: 100%;
-    height: 200px;
-    border-radius: 10px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.blog-card:hover .blog-img {
     transform: scale(1.05);
 }
 
-.blog-btn {
+.blog-image img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.blog-image:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.blog-image:hover .overlay {
+    opacity: 1;
+}
+
+.overlay .btn-warning {
     background-color: #ffcc00;
     color: #fff;
     border: none;
@@ -52,6 +39,6 @@
     transition: background-color 0.3s ease;
 }
 
-.blog-btn:hover {
+.overlay .btn-warning:hover {
     background-color: #e6b800;
 }
